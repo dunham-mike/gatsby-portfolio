@@ -1,5 +1,4 @@
 ---
-name: Deliberate Sprints
 title: Deliberate Sprints
 screenshot: /images/uploads/screenshot.jpg
 description: >-
