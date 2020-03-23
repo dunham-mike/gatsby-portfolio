@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Pandas Eating Lots`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Mike Dunham | Frontend Engineer`,
+    description: `Portfolio for Mike Dunham, frontend engineer with a specialization in React.`,
+    author: `@mldunham`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -29,12 +29,12 @@ module.exports = {
     },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-emotion`,
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-typography`,
+    //   options: {
+    //     pathToConfigModule: `src/utils/typography`,
+    //   },
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -43,6 +43,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
+    `gatsby-plugin-sass`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
