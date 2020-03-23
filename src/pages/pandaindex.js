@@ -134,7 +134,7 @@ export default ({ data }) => {
                         
                         </div>
                         <div class="tile is-parent">
-                            <div class="tile is-child notification is-light is-warning">
+                            <div class="tile is-child notification is-warning">
                                 <p class="title">Tooling</p>
                                 <div class="content">
                                     Includes:
