@@ -1,9 +1,9 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import { css } from "@emotion/core"
-import { rhythm } from "../utils/typography"
+// import { css } from "@emotion/core"
+// import { rhythm } from "../utils/typography"
 import Layout from "../components/pandalayout"
-import { Helmet } from "react-helmet"
+// import { Helmet } from "react-helmet"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faBuilding } from '@fortawesome/free-regular-svg-icons'
 import { faBuilding, faTrain, faLandmark, faGraduationCap } from '@fortawesome/free-solid-svg-icons'
@@ -17,11 +17,6 @@ export default ({ data }) => {
   console.log(data)
   return (
     <Layout>
-        <Helmet>
-          <meta charSet="utf-8" />
-          <title>My Title</title>
-          <link rel="canonical" href="http://mysite.com/example" />
-        </Helmet>
         <section class="hero is-medium">
             <div class="hero-body">
                 <div class="container">
@@ -31,8 +26,8 @@ export default ({ data }) => {
                     <h2 class="is-size-4">
                         Frontend engineer with a background in education, data, and politics
                     </h2>
-                    <br />
-                    <br class="is-hidden-tablet" />
+                    <div style={{minHeight: "2.25rem" }} class="is-hidden-tablet"></div>
+                    <div style={{minHeight: "1.5rem" }} class="is-hidden-mobile"></div>
                     <div class="is-size-5">
                         I specialize in <span class="has-text-weight-bold has-text-danger">
                             React</span> and <span class="has-text-weight-bold has-text-success">
@@ -79,7 +74,8 @@ export default ({ data }) => {
             </section>
         
         <section class="section" id="skills">
-            <br class="is-hidden-mobile"/>
+            <div style={{minHeight: "1.5rem" }} class="is-hidden-mobile"></div>
+            <div style={{minHeight: "0.75rem" }} class="is-hidden-tablet"></div>
             <div class="container">
                 <h1 class="title">
                     Skills
@@ -150,7 +146,8 @@ export default ({ data }) => {
             </div>
         </section>
         <section class="section" id="portfolio">
-            <br class="is-hidden-mobile"/>
+            <div style={{minHeight: "1.5rem" }} class="is-hidden-mobile"></div>
+            <div style={{minHeight: "0.75rem" }} class="is-hidden-tablet"></div>
             <div class="container">
                 <h1 class="title">
                     Portfolio
@@ -214,7 +211,8 @@ export default ({ data }) => {
             </div>
         </section>
         <section class="section" id="resume">
-            <br class="is-hidden-mobile"/>
+            <div style={{minHeight: "1.5rem" }} class="is-hidden-mobile"></div>
+            <div style={{minHeight: "0.75rem" }} class="is-hidden-tablet"></div>
             <div class="container">
                 <h1 class="title">
                     Resume
