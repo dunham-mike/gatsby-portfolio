@@ -1,5 +1,6 @@
 ---
 name: Deliberate Sprints
+title: Deliberate Sprints
 screenshot: /images/uploads/screenshot.jpg
 description: >-
   A CRUD sprint tracking tool that lets a user organize projects and sprints and
@@ -9,4 +10,5 @@ technologies: >-
   Cypress, Recharts, Formik, Yup, CircleCI
 app-url: 'https://deliberate-sprints.web.app/'
 github-url: 'https://github.com/dunham-mike/sprint-tracker'
+order: 0
 ---
