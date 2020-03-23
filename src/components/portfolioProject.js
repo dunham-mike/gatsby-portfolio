@@ -19,9 +19,14 @@ export const portfolioProject = (props) => {
                 Technologies: React, Jest/Enzyme, Cypress, Firebase
             </div>
             <div class="panel-block">
-                <button class="button is-link is-outlined is-fullwidth has-text-weight-bold">
+                <a href="https://deliberate-sprints.web.app/" target="_blank" rel="noopener noreferrer" class="button is-link is-outlined is-fullwidth has-text-weight-bold">
                     See the live web app
-                </button>
+                </a>
+            </div>
+            <div class="panel-block">
+                <a href="https://github.com/dunham-mike/sprint-tracker" target="_blank" rel="noopener noreferrer" class="button is-success is-outlined is-fullwidth has-text-weight-bold">
+                    See the source code on GitHub
+                </a>
             </div>
         </article>
     );
