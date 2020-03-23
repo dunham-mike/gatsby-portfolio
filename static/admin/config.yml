@@ -22,10 +22,12 @@ collections:
     label_singular: "Project"
     folder: "content/projects"
     create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { label: "Name", name: "name", widget: "string"}
+      - { label: "Title", name: "title", widget: "string"}
       - { label: "Screenshot", name: "screenshot", widget: "image" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Technologies", name: "technologies", widget: "string" }
       - { label: "App URL", name: "app-url", widget: "string" }
       - { label: "GitHub URL", name: "github-url", widget: "string" }
+      - { label: "Order", name: "order", widget: "number"}
