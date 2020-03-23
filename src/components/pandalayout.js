@@ -18,6 +18,10 @@ export default ({ children }) => {
 
     const [isHamburgerActive, setIsHamburgerActive] = useState(false);
 
+    const toggleHamburger = () => {
+        setIsHamburgerActive(!isHamburgerActive);
+    }
+
     const data = useStaticQuery(
       graphql`
         query {
@@ -42,7 +46,7 @@ export default ({ children }) => {
                         aria-label="menu" 
                         aria-expanded="false" 
                         data-target="navbarBasicExample"
-                        onClick={() => setIsHamburgerActive(!isHamburgerActive)}
+                        onClick={() => toggleHamburger()}
                     >
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
@@ -51,17 +55,19 @@ export default ({ children }) => {
                 </div>
                 <div id="navbarBasicExample" class={"navbar-menu" + (isHamburgerActive ? " is-active" : "")}>
                     <div class="navbar-end">
-                        <Link class="navbar-item" to="/pandaindex#skills">
+                        <Link class="navbar-item" to="/pandaindex#skills" onClick={isHamburgerActive ? () => toggleHamburger() : null}>
                             Skills
                         </Link>
-                        <Link class="navbar-item" to="/pandaindex#portfolio">
+                        <Link class="navbar-item" to="/pandaindex#portfolio" onClick={isHamburgerActive ? () => toggleHamburger() : null}>
                             Portfolio
                         </Link>
-                        <Link class="navbar-item" to="/pandaindex#resume">
+                        <Link class="navbar-item" to="/pandaindex#resume" onClick={isHamburgerActive ? () => toggleHamburger() : null}>
                             Resume
                         </Link>
                         <div class="navbar-item">
-                            <Link class="button is-primary has-text-weight-bold" to="/pandaindex#contact">Contact Me</Link>
+                            <Link class="button is-primary has-text-weight-bold" to="/pandaindex#contact" onClick={isHamburgerActive ? () => toggleHamburger() : null}>
+                                Contact Me
+                            </Link>
                         </div>
                     </div>
                 </div>

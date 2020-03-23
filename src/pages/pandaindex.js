@@ -32,6 +32,7 @@ export default ({ data }) => {
                         Frontend engineer with a background in education, data, and politics
                     </h2>
                     <br />
+                    <br class="is-hidden-tablet" />
                     <div class="is-size-5">
                         I specialize in <span class="has-text-weight-bold has-text-danger">
                             React</span> and <span class="has-text-weight-bold has-text-success">
@@ -76,8 +77,9 @@ export default ({ data }) => {
                 </div>
             </div>
             </section>
-        <br id="skills"/>
-        <section class="section">
+        
+        <section class="section" id="skills">
+            <br class="is-hidden-mobile"/>
             <div class="container">
                 <h1 class="title">
                     Skills
@@ -147,8 +149,8 @@ export default ({ data }) => {
                 </div>
             </div>
         </section>
-        <br id="portfolio"/>
-        <section class="section">
+        <section class="section" id="portfolio">
+            <br class="is-hidden-mobile"/>
             <div class="container">
                 <h1 class="title">
                     Portfolio
@@ -211,8 +213,8 @@ export default ({ data }) => {
 
             </div>
         </section>
-        <br id="resume"/>
-        <section class="section">
+        <section class="section" id="resume">
+            <br class="is-hidden-mobile"/>
             <div class="container">
                 <h1 class="title">
                     Resume

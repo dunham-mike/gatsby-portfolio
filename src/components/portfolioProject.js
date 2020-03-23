@@ -9,7 +9,7 @@ export const portfolioProject = (props) => {
                 Deliberate Sprints
             </p>
             <div class="panel-block">
-                <img src={portfolioScreenshot} style={{maxWidth: '500px', margin: '0.75rem auto'}}/>
+                <img src={portfolioScreenshot} style={{width: '100%', maxWidth: '500px', margin: '0.75rem auto'}}/>
             </div>
             <div class="panel-block">
                 A CRUD sprint tracking tool that lets a user organize projects and sprints and monitor their progress over time.
