@@ -36,6 +36,13 @@ export default ({ data }) => {
 
     return (
         <Layout>
+            <div className="application">
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>Mike Dunham | Frontend Engineer</title>
+                    <link rel="canonical" href="https://laughing-brahmagupta-91c87b.netlify.com/" />
+                </Helmet>
+            </div>
             <section class="hero is-medium">
                 <div class="hero-body">
                     <div class="container">
@@ -280,7 +287,8 @@ export default ({ data }) => {
                                             <a href="https://www.MikeForBurlingame.com" target="_blank" rel="noopener noreferrer">www.MikeForBurlingame.com</a><br />
                                             <span style={{color: 'hsl(0, 0%, 60%)'}}>4/2019 - 11/2019</span>
                                             <br />
-                                            Ran campaign of...
+                                            Ran grassroots city council campaign challenging two incumbents over housing, transportation, and equity issues.
+                                            Raised $25,000 and knocked more than 14,000 doors but fell short of beating the incumbent mayor.
                                         </p>
                                     </div>
 
@@ -292,7 +300,8 @@ export default ({ data }) => {
                                             <a href="https://www.SummitPS.org" target="_blank" rel="noopener noreferrer">www.SummitPS.org</a><br />
                                             <span style={{color: 'hsl(0, 0%, 60%)'}}>8/2015 - 6/2019</span>
                                             <br />
-                                            Oversaw team of...
+                                            Managed team of 6 to setup and operate numerous student data systems and
+                                            provide data, reporting, scheduling, and operational support to 11 schools in CA and WA.
                                         </p>
                                     </div>
 
@@ -304,7 +313,8 @@ export default ({ data }) => {
                                             <a href="https://www.NewClassrooms.org" target="_blank" rel="noopener noreferrer">www.NewClassrooms.org</a><br />
                                             <span style={{color: 'hsl(0, 0%, 60%)'}}>7/2012 - 8/2014</span>
                                             <br />
-                                            Oversaw progression of...
+                                            Developed and maintained large suite of data integrity tests for one of the country's earliest digital personalized learning programs
+                                            and helped build tools for dynamically moving 6,000 students through the curriculum.
                                         </p>
                                     </div>
 
@@ -316,7 +326,7 @@ export default ({ data }) => {
                                             <a href="https://www.TeachForAmerica.org" target="_blank" rel="noopener noreferrer">www.TeachForAmerica.org</a><br />
                                             <span style={{color: 'hsl(0, 0%, 60%)'}}>6/2010 - 6/2012</span>
                                             <br />
-                                            Taught over 50 students...
+                                            Selected into a highly-competitive public service program and committed to teaching for 2 years in an under-served community.
                                         </p>
                                     </div>
                                 </div>
