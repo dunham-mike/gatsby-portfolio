@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  } from '@fortawesome/fontawesome-svg-core'
 // import { faBuilding } from '@fortawesome/free-regular-svg-icons'
 import { faBuilding, faTrain, faLandmark, faGraduationCap, faFilePdf } from '@fortawesome/free-solid-svg-icons'
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 import './styles.scss';
 import PortfolioProject from '../components/portfolioProject';
@@ -326,7 +326,7 @@ export default ({ data }) => {
                                             <a href="https://www.TeachForAmerica.org" target="_blank" rel="noopener noreferrer">www.TeachForAmerica.org</a><br />
                                             <span style={{color: 'hsl(0, 0%, 60%)'}}>6/2010 - 6/2012</span>
                                             <br />
-                                            Selected into a highly-competitive public service program and committed to teaching for 2 years in an under-served community.
+                                            Selected into a highly-competitive public service program and taught for 2 years in an under-served Brooklyn neighborhood.
                                         </p>
                                     </div>
                                 </div>
@@ -351,9 +351,15 @@ export default ({ data }) => {
                                                 </span>
                                             </a>
                                         </p>
-                                        {/* <p>
-                                            Relevant coursework includes: CS 106B - Programming Abstractions, CS 298 - Seminar on Teaching Introductory Computer Science, CS 193P - iPhone and iPad Application Programming
-                                        </p> */}
+                                        <div style={{height: '0.75rem'}}></div>
+                                        <p class="is-size-6">
+                                            <a href="https://www.linkedin.com/in/mikeldunham/" target="_blank" rel="noopener noreferrer">
+                                                <span class="has-text-weight-bold" style={{verticalAlign: 'middle'}}>View LinkedIn</span>
+                                                <span class="icon" style={{verticalAlign: 'middle'}}>
+                                                    <FontAwesomeIcon icon={faLinkedin} />
+                                                </span>
+                                            </a>
+                                        </p>
                                         <div style={{height: '0.75rem'}}></div>
                                         <p class="is-size-6">
                                             <a href="https://github.com/dunham-mike" target="_blank" rel="noopener noreferrer">
