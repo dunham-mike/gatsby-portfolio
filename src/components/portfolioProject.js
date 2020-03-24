@@ -1,16 +1,20 @@
 import React from 'react';
-
-import portfolioScreenshot from "../../static/images/screenshot.jpg";
-
+// rgba(10, 10, 10, 0.1)
 export const portfolioProject = (props) => {
     return(
         <article class="panel is-primary">
             <p class="panel-heading">
                 {props.projectInfo.title}
             </p>
-            <div class="panel-block">
-                <img src={props.projectInfo.screenshot} style={{width: '100%'}} class="is-hidden-tablet" />
-                <img src={props.projectInfo.screenshot} style={{width: '100%', padding: '0.75rem'}} class="is-hidden-mobile" />
+            <div class="panel-block" style={{padding: '0.75rem 0.75rem'}}>
+                <img 
+                    src={props.projectInfo.screenshot} style={{width: '100%'}} class="is-hidden-tablet" 
+                    style={{boxShadow: '0 0.3em 1em -0.125em rgba(10, 10, 10, 0.2)'}}
+                />
+                <img 
+                    src={props.projectInfo.screenshot} style={{width: '100%'}} class="is-hidden-mobile" 
+                    style={{boxShadow: '0 0.3em 1em -0.125em rgba(10, 10, 10, 0.2)'}}
+                />
             </div>
             <div class="panel-block" style={{minHeight: '4rem'}}>
                 {props.projectInfo.description}
