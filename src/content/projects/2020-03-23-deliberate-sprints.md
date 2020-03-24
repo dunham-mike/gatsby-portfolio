@@ -1,6 +1,6 @@
 ---
 title: Deliberate Sprints
-screenshot: /images/uploads/screenshot.jpg
+screenshot: /images/uploads/deliberate-sprints.png
 description: >-
   A CRUD sprint tracking tool that lets a user organize projects and sprints and
   monitor their progress over time.
