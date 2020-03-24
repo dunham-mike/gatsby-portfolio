@@ -1,6 +1,6 @@
 ---
 title: Gatsby Portfolio Site
-screenshot: /images/uploads/patrick-reichboth-fyeegmlukky-unsplash.jpg
+screenshot: /images/uploads/portfolio.png
 description: >-
   The site you're looking at! A personal portfolio site built on the JAMStack
   using Gatsby and Netlify.
