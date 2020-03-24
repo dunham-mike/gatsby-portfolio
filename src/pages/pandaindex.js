@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 // import { css } from "@emotion/core"
 // import { rhythm } from "../utils/typography"
 import Layout from "../components/pandalayout"
-// import { Helmet } from "react-helmet"
+import { Helmet } from "react-helmet"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  } from '@fortawesome/fontawesome-svg-core'
 // import { faBuilding } from '@fortawesome/free-regular-svg-icons'
