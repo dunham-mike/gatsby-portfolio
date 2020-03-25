@@ -1,14 +1,15 @@
 <p align="center">
-  <a href="https://www.mikedunham.org">
+  <a href="https://www.mikedunham.org" target="_blank" rel="noopener noreferrer">
     <img alt="Portfolio" src="static/icons/android-chrome-192x192.png" width="60" />
   </a>
 </p>
 <h1 align="center">
-  Mike Dunham | Frontend Engineer
+  Mike Dunham | Frontend Engineering Portfolio
 </h1>
-<h2 align="center">
-  Gatsby-based Portfolio Site: <a href="https://www.mikedunham.org" style="text-decoration: none">Click to see it live!</a>
-</h2>
+
+<p align="center" style="font-weight: bold">
+  <a href="https://www.mikedunham.org" style="text-decoration: none" target="_blank" rel="noopener noreferrer" >Click to see it live!</a>
+</p>
 <div align="center">
   <a href="https://www.mikedunham.org">
     <img alt="Portfolio Screenshot" src="static/images/uploads/portfolio.png" height="300"/>
