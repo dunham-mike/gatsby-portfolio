@@ -25,9 +25,11 @@ export const portfolioProject = (props) => {
             <div class="panel-block" style={{padding: '0'}}>
                 <div class="columns is-centered is-hidden-touch is-hidden-desktop-only" style={{width: '100%', margin: 'auto'}}>
                     <div class="column" style={{paddingRight: '0'}}>
-                        <a href={props.projectInfo.app_url} target="_blank" rel="noopener noreferrer" class="button is-danger is-outlined is-fullwidth has-text-weight-bold">
+                        <div class="button is-danger is-outlined is-fullwidth has-text-weight-bold"
+                            onClick={props.openAppPreview}
+                        >
                             App preview
-                        </a>
+                        </div>
                     </div>
                     <div class="column">
                         <a href={props.projectInfo.app_url} target="_blank" rel="noopener noreferrer" class="button is-link is-outlined is-fullwidth has-text-weight-bold">
@@ -41,12 +43,12 @@ export const portfolioProject = (props) => {
                     </div>
                 </div>
                 <div class="is-hidden-widescreen" style={{width: '100%', padding: '0.75rem'}}>
-                    <a href={props.projectInfo.app_url} target="_blank" rel="noopener noreferrer" 
-                        class="button is-danger is-outlined is-fullwidth has-text-weight-bold"
+                    <div class="button is-danger is-outlined is-fullwidth has-text-weight-bold"
                         style={{marginBottom: '0.75rem'}}
+                        onClick={props.openAppPreview}
                     >
                         App preview
-                    </a>
+                    </div>
                     <a href={props.projectInfo.app_url} target="_blank" rel="noopener noreferrer" 
                         class="button is-link is-outlined is-fullwidth has-text-weight-bold"
                         style={{marginBottom: '0.75rem'}}
@@ -58,16 +60,6 @@ export const portfolioProject = (props) => {
                     </a>
                 </div>
             </div>
-            {/* <div class="panel-block">
-                <a href={props.projectInfo.app_url} target="_blank" rel="noopener noreferrer" class="button is-link is-outlined is-fullwidth has-text-weight-bold">
-                    See the live web app
-                </a>
-            </div>
-            <div class="panel-block">
-                <a href={props.projectInfo.github_url} target="_blank" rel="noopener noreferrer" class="button is-success is-outlined is-fullwidth has-text-weight-bold">
-                    See the source code on GitHub
-                </a>
-            </div> */}
         </article>
     );
 }

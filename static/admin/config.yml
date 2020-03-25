@@ -26,6 +26,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string"}
       - { label: "Screenshot", name: "screenshot", widget: "image" }
+      - { label: "Preview", name: "preview", widget: "image" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Technologies", name: "technologies", widget: "string" }
       - { label: "App URL", name: "app-url", widget: "string" }

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link, graphql } from "gatsby"
 // import { css } from "@emotion/core"
 // import { rhythm } from "../utils/typography"
@@ -15,12 +15,24 @@ import PortfolioProject from '../components/portfolioProject';
 
 
 export default ({ data }) => {
-    // console.log('data:', data.allMarkdownRemark.edges);
+    const [isAppPreviewActive, setIsAppPreviewActive] = useState(false);
+    const [activeAppPreviewName, setActiveAppPreviewName] = useState(null);
+    const [activeAppPreviewImageUrl, setActiveAppPreviewImageUrl] = useState(null);
+
+
+    const openAppPreview = (name, url) => {
+        setIsAppPreviewActive(true);
+        setActiveAppPreviewName(name);
+        setActiveAppPreviewImageUrl(url);
+    };
+
+    const closeAppPreview = () => {
+        setIsAppPreviewActive(false);
+        setActiveAppPreviewName(null);
+        setActiveAppPreviewImageUrl(null);
+    };
 
     const markdownArray = data.allMarkdownRemark.edges;
-
-    // console.log('markdownArray:', markdownArray)
-
     const portfolioProjects = markdownArray
         .sort((a, b) => {
             return a.node.frontmatter.order - b.node.frontmatter.order
@@ -29,7 +41,11 @@ export default ({ data }) => {
             console.log('project:', project.node.frontmatter)
             return (
                 <div class="column is-half">
-                    <PortfolioProject projectInfo={project.node.frontmatter} />
+                    <PortfolioProject 
+                        projectInfo={project.node.frontmatter} 
+                        openAppPreview={() => openAppPreview(project.node.frontmatter.title, project.node.frontmatter.screenshot)} 
+                        closeAppPreview={closeAppPreview} 
+                    />
                 </div>
             );
         });
@@ -171,6 +187,7 @@ export default ({ data }) => {
                     </div>
                 </div>
             </section>
+
             <section class="section" id="portfolio">
                 <div style={{minHeight: "1.5rem" }} class="is-hidden-mobile"></div>
                 <div style={{minHeight: "0.75rem" }} class="is-hidden-tablet"></div>
@@ -181,62 +198,10 @@ export default ({ data }) => {
 
                     <div class="columns is-multiline is-centered">
                         {portfolioProjects}
-                        {/* <div class="column is-half">
-                            <PortfolioProject />
-                        </div>
-                        <div class="column is-half">
-                            <PortfolioProject />
-                        </div>
-                        <div class="column is-half">
-                            <PortfolioProject />
-                        </div> */}
                     </div>
-
-                    {/* <div class="tile is-ancestor">
-                        <div class="tile is-vertical is-8">
-                            <div class="tile">
-                                <div class="tile is-parent is-vertical">
-                                    <div class="tile is-child notification is-primary">
-                                        <p class="title">Vertical...</p>
-                                        <p class="subtitle">Top tile</p>
-                                    </div>
-                                    <article class="tile is-child notification is-warning">
-                                        <p class="title">...tiles</p>
-                                        <p class="subtitle">Bottom tile</p>
-                                    </article>
-                                </div>
-                                <div class="tile is-parent">
-                                    <article class="tile is-child notification is-info">
-                                        <p class="title">Middle tile</p>
-                                        <p class="subtitle">With an image</p>
-                                    </article>
-                                </div>
-                            </div>
-                            <div class="tile is-parent">
-                                <article class="tile is-child notification is-danger">
-                                    <p class="title">Wide tile</p>
-                                        <p class="subtitle">Aligned with the right tile</p>
-                                        <div class="content">
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
-                        <div class="tile is-parent">
-                            <article class="tile is-child notification is-success">
-                                <div class="content">
-                                    <p class="title">Tall tile</p>
-                                    <p class="subtitle">With even more content</p>
-                                    <div class="content">
-                                        Content
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                    </div> */}
-
-
                 </div>
             </section>
+
             <section class="section" id="resume">
                 <div style={{minHeight: "1.5rem" }} class="is-hidden-mobile"></div>
                 <div style={{minHeight: "0.75rem" }} class="is-hidden-tablet"></div>
@@ -374,9 +339,6 @@ export default ({ data }) => {
                             </div>
                         </nav>
                     </div>
-
-                    
-                    
                 </div>
             </section>
 
@@ -394,6 +356,28 @@ export default ({ data }) => {
                     </p>
                 </div>
             </section>
+
+            <div class={"modal"  + (isAppPreviewActive ? " is-active" : "" )}>
+                <div class="modal-background" onClick={closeAppPreview}></div>
+                <div 
+                    class="modal-card"
+                    style={{minWidth: '80%'}}
+                >
+                    <header class="modal-card-head">
+                        <p class="modal-card-title">
+                            {activeAppPreviewName}
+                        </p>
+                        <button class="delete" aria-label="close" onClick={closeAppPreview}></button>
+                    </header>
+                    <section class="modal-card-body">
+                        <img 
+                            src={activeAppPreviewImageUrl} style={{width: '100%'}}
+                            style={{boxShadow: '0 0.3em 1em -0.125em rgba(10, 10, 10, 0.2)'}}
+                        />
+                    </section>
+                </div>
+            </div>
+
         </Layout>
     )
 }
