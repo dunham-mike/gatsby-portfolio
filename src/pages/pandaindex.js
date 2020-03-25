@@ -401,6 +401,7 @@ export const query = graphql`
                 github_url
                 order
                 screenshot
+                preview
                 technologies
             }
             }
