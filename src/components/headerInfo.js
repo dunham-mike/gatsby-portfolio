@@ -11,7 +11,7 @@ export const headerInfo = () => {
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>Mike Dunham | Frontend Engineer</title>
-                <link rel="canonical" href="https://laughing-brahmagupta-91c87b.netlify.com/" />
+                <link rel="canonical" href="https://mikedunham.netlify.com/" />
                 <link rel="icon" href={favicon} />
                 <link rel="apple-touch-icon" sizes="180x180" href="../../static/icons/apple-touch-icon.png" />
                 <link rel="icon" type="image/png" sizes="32x32" href="../../static/icons/favicon-32x32.png" />
