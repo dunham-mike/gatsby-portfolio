@@ -1,77 +1,78 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
+import React, { useState } from "react"
+// import { css } from "@emotion/core"
+// import { Link } from "gatsby"
+// import { rhythm } from "../utils/typography"
+// import styled from 'styled-components'
+import BodyClassName from 'react-body-classname';
 
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-import { createGlobalStyle } from "styled-components"
+import { useStaticQuery, Link, graphql } from "gatsby"
 
-import Header from "./header"
-import "./layout.css"
+// const BurgerLabel = styled(label)`
+//     display: none;
+//     :checked ~ .nav-menu {
+//         display: block;
+//     }
+// `
 
-import { Link } from "gatsby"
+export default ({ children }) => {
 
-const ListLink = props => (
-  <li style={{ display: `inline-block`, marginRight: `1rem` }}>
-    <Link to={props.to}>{props.children}</Link>
-  </li>
-)
+    const [isHamburgerActive, setIsHamburgerActive] = useState(false);
 
-const GlobalStyle = createGlobalStyle`
-  body {
-    color: ${props => (props.theme === "purple" ? "purple" : "white")};
-  }
-`
-
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
+    const toggleHamburger = () => {
+        setIsHamburgerActive(!isHamburgerActive);
     }
-  `)
 
-  return (
-    <>
-      <GlobalStyle theme="purple" />
-      <Header siteTitle={data.site.siteMetadata.title}>
-        <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
-          <h3 style={{ display: `inline` }}>MySweetSite</h3>
-        </Link>
-        <ul style={{ listStyle: `none`, float: `right` }}>
-          <ListLink to="/">Home</ListLink>
-          <ListLink to="/about/">About</ListLink>
-          <ListLink to="/contact/">Contact</ListLink>
-        </ul>
-      </Header>
-      <div
-        style={{
-          margin: `3rem auto`,
-          maxWidth: 650,
-          padding: `0 1rem`,
-        }}
-      >
-        <h3>MySweetSite</h3>
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
-    </>
-  )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
-
-export default Layout
+    const data = useStaticQuery(
+      graphql`
+        query {
+          site {
+            siteMetadata {
+              title
+            }
+          }
+        }
+      `
+    )
+    return (
+        <React.Fragment>
+            <nav class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation">
+                <BodyClassName className="has-navbar-fixed-top" />
+                <div class="navbar-brand">
+                    <Link class="navbar-item has-text-info has-text-weight-bold is-size-5" to="#top">
+                        {data.site.siteMetadata.title}
+                    </Link>
+                    <div 
+                        class={"navbar-burger burger" + (isHamburgerActive ? " is-active" : "")} 
+                        aria-label="menu" 
+                        aria-expanded="false" 
+                        data-target="navbarBasicExample"
+                        onClick={() => toggleHamburger()}
+                    >
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </div>
+                </div>
+                <div id="navbarBasicExample" class={"navbar-menu" + (isHamburgerActive ? " is-active" : "")}>
+                    <div class="navbar-end">
+                        <Link class="navbar-item" to="#skills" onClick={isHamburgerActive ? () => toggleHamburger() : null}>
+                            Skills
+                        </Link>
+                        <Link class="navbar-item" to="#portfolio" onClick={isHamburgerActive ? () => toggleHamburger() : null}>
+                            Portfolio
+                        </Link>
+                        <Link class="navbar-item" to="#resume" onClick={isHamburgerActive ? () => toggleHamburger() : null}>
+                            Resume
+                        </Link>
+                        <div class="navbar-item">
+                            <Link class="button is-primary has-text-weight-bold" to="#contact" onClick={isHamburgerActive ? () => toggleHamburger() : null}>
+                                Contact Me
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            {children}
+        </React.Fragment>
+    )
+};
