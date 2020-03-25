@@ -1,6 +1,7 @@
 ---
 title: Gatsby Portfolio Site
 screenshot: /images/uploads/portfolio.png
+preview: /images/uploads/portfolio.gif
 description: >-
   The site you're looking at! A personal portfolio site built on the JAMStack
   using Gatsby and Netlify.
