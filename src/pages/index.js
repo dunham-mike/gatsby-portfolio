@@ -1,14 +1,12 @@
 import React, { useState } from "react"
 import { graphql } from "gatsby"
-// import { css } from "@emotion/core"
-// import { rhythm } from "../utils/typography"
 import Layout from "../components/layout"
 import { Helmet } from "react-helmet"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  } from '@fortawesome/fontawesome-svg-core'
-// import { faBuilding } from '@fortawesome/free-regular-svg-icons'
 import { faBuilding, faTrain, faLandmark, faGraduationCap, faFilePdf, faHeart } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import SEO from "../components/seo"
 
 import './styles.scss';
 import PortfolioProject from '../components/portfolioProject';
@@ -54,6 +52,7 @@ export default ({ data }) => {
     return (
         <Layout>
             <div className="application">
+                <SEO />
                 <Helmet>
                     <meta charSet="utf-8" />
                     <title>Mike Dunham | Frontend Engineer</title>
@@ -220,7 +219,6 @@ export default ({ data }) => {
                         <nav class="level column is-12" style={{maxWidth: '1000px'}}>
                             <div class="columns is-centered" style={{width: '100%', margin: '0'}}>
                                 <div class="column is-4">
-                                    {/* <div style={{width: '0.375rem'}}></div> */}
                                     <div class="is-size-4 has-text-weight-bold" style={{width: '100%'}}>
                                         Education
                                     </div>
@@ -231,9 +229,6 @@ export default ({ data }) => {
                                             <span class="has-text-weight-bold">Stanford Graduate School of Education</span><br />
                                             MA, Learning, Design, & Technology <span style={{color: 'hsl(0, 0%, 60%)'}}>(2015)</span>
                                         </p>
-                                        {/* <p>
-                                            Relevant coursework includes: CS 106B - Programming Abstractions, CS 298 - Seminar on Teaching Introductory Computer Science, CS 193P - iPhone and iPad Application Programming
-                                        </p> */}
                                         <div style={{height: '0.75rem'}}></div>
                                         <p class="is-size-6">
                                             <span class="has-text-weight-bold">Yale University</span><br />
@@ -246,7 +241,6 @@ export default ({ data }) => {
                         <nav class="level column is-12" style={{maxWidth: '1000px'}}>
                             <div class="columns is-centered" style={{width: '100%', margin: '0'}}>
                                 <div class="column is-4">
-                                    {/* <div style={{width: '0.375rem'}}></div> */}
                                     <div class="is-size-4 has-text-weight-bold" style={{width: '100%'}}>
                                         Experience
                                     </div>
@@ -307,7 +301,6 @@ export default ({ data }) => {
                         <nav class="level column is-12" style={{maxWidth: '1000px'}}>
                             <div class="columns is-centered" style={{width: '100%', margin: '0'}}>
                                 <div class="column is-4">
-                                    {/* <div style={{width: '0.375rem'}}></div> */}
                                     <div class="is-size-4 has-text-weight-bold" style={{width: '100%'}}>
                                         Links
                                     </div>
@@ -411,45 +404,29 @@ export default ({ data }) => {
     )
 }
 
-/* 
-after __typename
 
-sitePage {
-        id
-        }
+// nodes {
+//     id
+// }
 
-
-
-after node {
-
-
-
-fields {
-                slug
-            }
-*/
 export const query = graphql`
     query {
         __typename
         allMarkdownRemark(filter: {frontmatter: {app_url: {ne: null}}}) {
-        edges {
-            node {
-            
-            frontmatter {
-                title
-                app_url
-                description
-                github_url
-                order
-                screenshot
-                preview
-                technologies
+            edges {
+                node {
+                    frontmatter {
+                        title
+                        app_url
+                        description
+                        github_url
+                        order
+                        screenshot
+                        preview
+                        technologies
+                    }
+                }
             }
-            }
-        }
-        nodes {
-            id
-        }
         }
     }
 `
