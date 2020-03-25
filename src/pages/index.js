@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 // import { css } from "@emotion/core"
 // import { rhythm } from "../utils/typography"
 import Layout from "../components/layout"
@@ -364,7 +364,13 @@ export default ({ data }) => {
             </section>
 
             <div class={"modal"  + (isAppPreviewActive ? " is-active" : "" )}>
-                <div class="modal-background" onClick={closeAppPreview}></div>
+                <div 
+                    class="modal-background" 
+                    onClick={closeAppPreview}
+                    onKeyDown={closeAppPreview}
+                    role="button"
+                    tabIndex={0}
+                ></div>
                 <div 
                     class="modal-card"
                     style={{minWidth: '80%', minHeight: '41.85%'}}
@@ -377,8 +383,9 @@ export default ({ data }) => {
                     </header>
                     <section class="modal-card-body">
                         <img 
-                            src={activeAppPreviewImageUrl} style={{width: '100%'}}
-                            style={{boxShadow: '0 0.3em 1em -0.125em rgba(10, 10, 10, 0.2)'}}
+                            src={activeAppPreviewImageUrl}
+                            alt="App Preview"
+                            style={{width: '100%', boxShadow: '0 0.3em 1em -0.125em rgba(10, 10, 10, 0.2)'}}
                         />
                     </section>
                 </div>

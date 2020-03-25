@@ -46,7 +46,10 @@ export default ({ children }) => {
                         aria-label="menu" 
                         aria-expanded="false" 
                         data-target="navbarBasicExample"
+                        role="button"
+                        tabIndex={0}
                         onClick={() => toggleHamburger()}
+                        onKeyDown={() => toggleHamburger()}
                     >
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
