@@ -43,7 +43,7 @@ export default ({ data }) => {
                 <div class="column is-half">
                     <PortfolioProject 
                         projectInfo={project.node.frontmatter} 
-                        openAppPreview={() => openAppPreview(project.node.frontmatter.title, project.node.frontmatter.screenshot)} 
+                        openAppPreview={() => openAppPreview(project.node.frontmatter.title, project.node.frontmatter.preview)} 
                         closeAppPreview={closeAppPreview} 
                     />
                 </div>
