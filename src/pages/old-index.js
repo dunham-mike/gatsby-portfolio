@@ -12,9 +12,9 @@ const IndexPage = () => (
     <h1>Mike Dunham</h1>
     <p>Frontend engineer.</p>
     <p>React. JavaScript.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+    {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
-    </div>
+    </div> */}
     <img src="https://source.unsplash.com/random/400x200" alt="" />
     <Link to="/page-2/">Go to page 2</Link>
     <div>
