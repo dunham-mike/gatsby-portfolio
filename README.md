@@ -1,14 +1,14 @@
 <p align="center">
-  <a href="https://www.mikedunham.org" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.mikedunham.org">
     <img alt="Portfolio" src="static/icons/android-chrome-192x192.png" width="60" />
   </a>
 </p>
 <h1 align="center">
-  Mike Dunham | Frontend Engineering Portfolio
+  Mike Dunham | Frontend Engineering Portfolio Site
 </h1>
 
 <h3 align="center" style="font-weight: bold">
-  <a href="https://www.mikedunham.org" style="text-decoration: none" target="_blank" rel="noopener noreferrer" >Live Site</a>
+  <a href="https://www.mikedunham.org" style="text-decoration: none">Live Site</a>
 </h3>
 <div align="center">
   <a href="https://www.mikedunham.org">
