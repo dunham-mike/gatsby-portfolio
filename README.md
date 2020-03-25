@@ -7,16 +7,17 @@
   Mike Dunham | Frontend Engineering Portfolio
 </h1>
 
-<p align="center" style="font-weight: bold">
-  <a href="https://www.mikedunham.org" style="text-decoration: none" target="_blank" rel="noopener noreferrer" >Click to see it live!</a>
-</p>
+<h3 align="center" style="font-weight: bold">
+  <a href="https://www.mikedunham.org" style="text-decoration: none" target="_blank" rel="noopener noreferrer" >Live Site</a>
+</h3>
 <div align="center">
   <a href="https://www.mikedunham.org">
     <img alt="Portfolio Screenshot" src="static/images/uploads/portfolio.png" height="300"/>
   </a>
 </div>
 
-This is a personal portfolio built on the JAMStack using Gatsby and Netlify. Projects are stored in markdown and can be added, edited, or removed via a NetlifyCMS admin interface, without touching the source code directly.
+\
+This is a personal portfolio site built on the JAMStack using Gatsby and Netlify. Projects are stored in markdown and can be added, edited, or removed via a NetlifyCMS admin interface, without touching the source code directly.
 
 ## Technologies
 
