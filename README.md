@@ -12,7 +12,7 @@
 </h3>
 <div align="center">
   <a href="https://www.mikedunham.org">
-    <img alt="Portfolio Screenshot" src="static/images/uploads/portfolio.png" height="300" border="1" border-color="#4A4A4A"/>
+    <img alt="Portfolio Screenshot" src="static/images/uploads/portfolio.png" height="300" />
   </a>
 </div>
 
