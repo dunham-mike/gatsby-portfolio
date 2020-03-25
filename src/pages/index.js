@@ -412,6 +412,14 @@ export default ({ data }) => {
 }
 
 /* 
+after __typename
+
+sitePage {
+        id
+        }
+
+
+
 after node {
 
 
@@ -423,9 +431,6 @@ fields {
 export const query = graphql`
     query {
         __typename
-        sitePage {
-        id
-        }
         allMarkdownRemark(filter: {frontmatter: {app_url: {ne: null}}}) {
         edges {
             node {
