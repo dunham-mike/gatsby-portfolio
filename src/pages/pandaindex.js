@@ -367,7 +367,7 @@ export default ({ data }) => {
                 <div class="modal-background" onClick={closeAppPreview}></div>
                 <div 
                     class="modal-card"
-                    style={{minWidth: '80%'}}
+                    style={{minWidth: '80%', minHeight: '41.85%'}}
                 >
                     <header class="modal-card-head">
                         <p class="modal-card-title">
