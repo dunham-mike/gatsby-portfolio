@@ -12,7 +12,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 import './styles.scss';
 import PortfolioProject from '../components/portfolioProject';
-import favicon from '/icons/favicon.ico';
+import favicon from '../../static/icons/favicon.ico';
 
 
 export default ({ data }) => {
@@ -59,10 +59,10 @@ export default ({ data }) => {
                     <title>Mike Dunham | Frontend Engineer</title>
                     <link rel="canonical" href="https://laughing-brahmagupta-91c87b.netlify.com/" />
                     <link rel="icon" href={favicon} />
-                    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
-                    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
-                    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
-                    <link rel="manifest" href="/icons/site.webmanifest"></link>
+                    <link rel="apple-touch-icon" sizes="180x180" href="../../static/icons/apple-touch-icon.png" />
+                    <link rel="icon" type="image/png" sizes="32x32" href="../../static/icons/favicon-32x32.png" />
+                    <link rel="icon" type="image/png" sizes="16x16" href="../../static/icons/favicon-16x16.png" />
+                    <link rel="manifest" href="../../static/icons/site.webmanifest"></link>
                 </Helmet>
             </div>
             <section class="hero is-medium">
