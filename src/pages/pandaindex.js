@@ -7,11 +7,12 @@ import { Helmet } from "react-helmet"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  } from '@fortawesome/fontawesome-svg-core'
 // import { faBuilding } from '@fortawesome/free-regular-svg-icons'
-import { faBuilding, faTrain, faLandmark, faGraduationCap, faFilePdf } from '@fortawesome/free-solid-svg-icons'
+import { faBuilding, faTrain, faLandmark, faGraduationCap, faFilePdf, faHeart } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 import './styles.scss';
 import PortfolioProject from '../components/portfolioProject';
+import favicon from '/icons/favicon.ico';
 
 
 export default ({ data }) => {
@@ -57,6 +58,11 @@ export default ({ data }) => {
                     <meta charSet="utf-8" />
                     <title>Mike Dunham | Frontend Engineer</title>
                     <link rel="canonical" href="https://laughing-brahmagupta-91c87b.netlify.com/" />
+                    <link rel="icon" href={favicon} />
+                    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+                    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
+                    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
+                    <link rel="manifest" href="/icons/site.webmanifest"></link>
                 </Helmet>
             </div>
             <section class="hero is-medium">
@@ -309,7 +315,7 @@ export default ({ data }) => {
                                 <div class="column is-7">
                                     <div style={{width: '100%'}}>
                                         <p class="is-size-6">
-                                            <a href="" target="_blank" rel="noopener noreferrer">
+                                            <a href="/documents/Resume.pdf" target="_blank" rel="noopener noreferrer">
                                                 <span class="has-text-weight-bold" style={{verticalAlign: 'middle'}}>Download Resume</span>
                                                 <span class="icon" style={{verticalAlign: 'middle'}}>
                                                     <FontAwesomeIcon icon={faFilePdf} />
@@ -377,6 +383,22 @@ export default ({ data }) => {
                     </section>
                 </div>
             </div>
+
+            <footer class="footer">
+                <div class="content" style={{display: 'flex', flexDirection: 'column'}}>
+                    <p style={{display: 'flex', margin: '0 auto'}}>
+                        <span class="is-vcentered">Made with</span>
+                        <span class="icon is-vcentered has-text-danger">
+                            <FontAwesomeIcon icon={faHeart} />
+                        </span>
+                        <span class="is-vcentered">in Burlingame, CA.</span>
+                    </p>
+                    <br />
+                    <p style={{margin: '0 auto'}}>
+                        © Mike Dunham {new Date().getFullYear()}
+                    </p>
+                </div>
+            </footer>
 
         </Layout>
     )
