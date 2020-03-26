@@ -1,18 +1,7 @@
 import React, { useState } from "react"
-// import { css } from "@emotion/core"
-// import { Link } from "gatsby"
-// import { rhythm } from "../utils/typography"
-// import styled from 'styled-components'
 import BodyClassName from 'react-body-classname';
 
 import { useStaticQuery, Link, graphql } from "gatsby"
-
-// const BurgerLabel = styled(label)`
-//     display: none;
-//     :checked ~ .nav-menu {
-//         display: block;
-//     }
-// `
 
 export default ({ children }) => {
 
@@ -20,6 +9,11 @@ export default ({ children }) => {
 
     const toggleHamburger = () => {
         setIsHamburgerActive(!isHamburgerActive);
+    }
+
+    if (typeof window !== "undefined") {
+        // eslint-disable-next-line global-require
+        require("smooth-scroll")('a[href*="#"]')
     }
 
     const data = useStaticQuery(
@@ -38,8 +32,10 @@ export default ({ children }) => {
             <nav class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation">
                 <BodyClassName className="has-navbar-fixed-top" />
                 <div class="navbar-brand">
-                    <Link class="navbar-item has-text-info has-text-weight-bold is-size-5" to="#top">
-                        {data.site.siteMetadata.title}
+                    <Link class="navbar-item has-text-info has-text-weight-bold is-size-5 is-inline" to="#top">
+                        <span>Mike Dunham&nbsp;</span>
+                        <span style={{verticalAlign: '1px'}}>|</span>
+                        <span>&nbsp;Frontend Engineer</span>
                     </Link>
                     <div 
                         class={"navbar-burger burger" + (isHamburgerActive ? " is-active" : "")} 

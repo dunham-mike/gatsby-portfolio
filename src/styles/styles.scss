@@ -1,4 +1,14 @@
 @charset "utf-8";
-// If need, change your variables before importing Bulma
-// $title-color: #ff0000;
+@import "../../node_modules/bulma/sass/utilities/initial-variables";
+@import "../../node_modules/bulma/sass/utilities/functions";
+
+// Tool: https://coolors.co/00d1b2-ffffff-ff3860-174287-44af69
+// Greens: #004E64, #182825, #44AF69 (best of the greens), #29BF12
+$dark-purple: #413C58;
+$dark-purple-invert: findColorInvert($dark-purple);
+$custom-colors: ("dark-purple": ($dark-purple, $dark-purple-invert));
+
+// $custom-colors: ("orange": ($orange, findColorInvert($orange)));
+// $custom-colors: ("purple": ($purple, findColorInvert($purple)));
+
 @import "~bulma/bulma.sass";

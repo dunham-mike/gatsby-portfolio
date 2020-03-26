@@ -39,12 +39,16 @@ export const portfolioProject = (props) => {
                         </div>
                     </div>
                     <div class="column">
-                        <a href={props.projectInfo.app_url} target="_blank" rel="noopener noreferrer" class="button is-link is-outlined is-fullwidth has-text-weight-bold">
+                        <a href={props.projectInfo.app_url} target="_blank" rel="noopener noreferrer" 
+                            class="button is-link is-outlined is-fullwidth has-text-weight-bold"
+                        >
                             Live web app
                         </a>
                     </div>
                     <div class="column"  style={{paddingLeft: '0'}}>
-                        <a href={props.projectInfo.github_url} target="_blank" rel="noopener noreferrer" class="button is-success is-outlined is-fullwidth has-text-weight-bold">
+                        <a href={props.projectInfo.github_url} target="_blank" rel="noopener noreferrer" 
+                            class="button is-dark-purple is-outlined is-fullwidth has-text-weight-bold"
+                        >
                             Source code on GitHub
                         </a>
                     </div>
@@ -65,7 +69,9 @@ export const portfolioProject = (props) => {
                     >
                         Live web app
                     </a>
-                    <a href={props.projectInfo.github_url} target="_blank" rel="noopener noreferrer" class="button is-success is-outlined is-fullwidth has-text-weight-bold">
+                    <a href={props.projectInfo.github_url} target="_blank" rel="noopener noreferrer" 
+                        class="button is-dark-purple is-outlined is-fullwidth has-text-weight-bold"
+                    >
                         Source code on GitHub
                     </a>
                 </div>
