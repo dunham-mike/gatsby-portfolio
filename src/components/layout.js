@@ -27,15 +27,18 @@ export default ({ children }) => {
         }
       `
     )
+
+    const siteTitleArray = data.site.siteMetadata.title.split(" ");
+
     return (
         <React.Fragment>
             <nav class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation">
                 <BodyClassName className="has-navbar-fixed-top" />
                 <div class="navbar-brand">
                     <Link class="navbar-item has-text-info has-text-weight-bold is-size-5 is-inline" to="#top">
-                        <span>Mike Dunham&nbsp;</span>
-                        <span style={{verticalAlign: '1px'}}>|</span>
-                        <span>&nbsp;Frontend Engineer</span>
+                        <span>{siteTitleArray[0] + " " + siteTitleArray[1]}&nbsp;</span>
+                        <span style={{verticalAlign: '1px'}}>{siteTitleArray[2]}</span>
+                        <span>&nbsp;{siteTitleArray[3] + " " + siteTitleArray[4]}</span>
                     </Link>
                     <div 
                         class={"navbar-burger burger" + (isHamburgerActive ? " is-active" : "")} 
