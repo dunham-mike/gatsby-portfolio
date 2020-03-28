@@ -47,12 +47,16 @@ export const resume = () => {
                             <div class="column is-7">
                                 <div style={{width: '100%'}}>
                                     <p class="is-size-6">
-                                        <span class="has-text-weight-bold">Candidate for Burlingame City Council</span><br />
+                                        <span class="has-text-weight-bold">Mike Dunham for Burlingame City Council</span><br />
                                         <a href="https://www.MikeForBurlingame.com" target="_blank" rel="noopener noreferrer">www.MikeForBurlingame.com</a><br />
-                                        <span style={{color: 'hsl(0, 0%, 60%)'}}>4/2019 - 11/2019</span>
+                                        <span style={{color: 'hsl(0, 0%, 60%)'}}>7/2019 - 11/2019</span>
                                         <br />
-                                        Ran grassroots city council campaign challenging two incumbents over housing, transportation, and equity issues.
-                                        Raised $25,000 and knocked more than 14,000 doors but fell short of beating the incumbent mayor.
+                                        <div class="content">
+                                            <ul>
+                                                <li style={{marginLeft: '-15px'}}>Ran grassroots city council campaign challenging two incumbents over housing, transportation, and equity issues.</li>
+                                                <li style={{marginLeft: '-15px'}}>Raised $25,000, knocked more than 14,000 doors with 45+ volunteers, and helped drive turnout to its highest level in 15 years.</li>
+                                            </ul>
+                                        </div>
                                     </p>
                                 </div>
 
@@ -64,8 +68,12 @@ export const resume = () => {
                                         <a href="https://www.SummitPS.org" target="_blank" rel="noopener noreferrer">www.SummitPS.org</a><br />
                                         <span style={{color: 'hsl(0, 0%, 60%)'}}>8/2015 - 6/2019</span>
                                         <br />
-                                        Managed team of 6 to setup and operate numerous student data systems and
-                                        provide data, reporting, scheduling, and operational support to 11 schools in CA and WA.
+                                        <div class="content">
+                                            <ul>
+                                                <li style={{marginLeft: '-15px'}}>Managed team of 6 to setup and operate numerous student data systems and provide data, reporting, scheduling, and operational support to 11 schools in CA and WA.</li>
+                                            </ul>
+                                        </div>
+                                        
                                     </p>
                                 </div>
 
@@ -77,8 +85,13 @@ export const resume = () => {
                                         <a href="https://www.NewClassrooms.org" target="_blank" rel="noopener noreferrer">www.NewClassrooms.org</a><br />
                                         <span style={{color: 'hsl(0, 0%, 60%)'}}>7/2012 - 8/2014</span>
                                         <br />
-                                        Developed and maintained large suite of data integrity tests for one of the country's earliest digital personalized learning programs
-                                        and helped build tools for dynamically moving 6,000 students through the curriculum.
+                                        <div class="content">
+                                            <ul>
+                                                <li style={{marginLeft: '-15px'}}>Developed and maintained large suite of SQL-based data integrity tests for one of the country's earliest personalized learning programs.</li>
+                                                <li style={{marginLeft: '-15px'}}>Led cross-functional team (academics, operations, engineering) to build next-generation of tools for dynamically moving 6,000 students through the program's curriculum.</li>
+                                            </ul>
+                                        </div>
+                                        
                                     </p>
                                 </div>
 
@@ -90,7 +103,11 @@ export const resume = () => {
                                         <a href="https://www.TeachForAmerica.org" target="_blank" rel="noopener noreferrer">www.TeachForAmerica.org</a><br />
                                         <span style={{color: 'hsl(0, 0%, 60%)'}}>6/2010 - 6/2012</span>
                                         <br />
-                                        Selected into a highly-competitive public service program and taught for 2 years in an under-served Brooklyn neighborhood.
+                                        <div class="content">
+                                            <ul>
+                                                <li style={{marginLeft: '-15px'}}>Selected into a highly-competitive public service program and taught for 2 years in an under-served Brooklyn neighborhood.</li>
+                                            </ul>
+                                        </div>
                                     </p>
                                 </div>
                             </div>
@@ -107,7 +124,7 @@ export const resume = () => {
                             <div class="column is-7">
                                 <div style={{width: '100%'}}>
                                     <p class="is-size-6">
-                                        <a href="/documents/Resume.pdf" target="_blank" rel="noopener noreferrer">
+                                        <a href="/documents/Mike Dunham - Resume (Web).pdf" target="_blank" rel="noopener noreferrer">
                                             <span class="has-text-weight-bold" style={{verticalAlign: 'middle'}}>Download Resume</span>
                                             <span class="icon" style={{verticalAlign: 'middle'}}>
                                                 <FontAwesomeIcon icon={faFilePdf} />
