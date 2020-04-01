@@ -47,8 +47,8 @@ export default ({ children }) => {
                         data-target="navbarBasicExample"
                         role="button"
                         tabIndex={0}
-                        onClick={() => toggleHamburger()}
-                        onKeyDown={() => toggleHamburger()}
+                        onClick={toggleHamburger}
+                        onKeyDown={toggleHamburger}
                     >
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
@@ -57,13 +57,13 @@ export default ({ children }) => {
                 </div>
                 <div id="navbarBasicExample" class={"navbar-menu" + (isHamburgerActive ? " is-active" : "")}>
                     <div class="navbar-end">
-                        <Link class="navbar-item" to="#skills" onClick={isHamburgerActive ? () => toggleHamburger() : null}>
+                        <Link class="navbar-item" to="#skills" onClick={isHamburgerActive ? toggleHamburger : null}>
                             Skills
                         </Link>
-                        <Link class="navbar-item" to="#portfolio" onClick={isHamburgerActive ? () => toggleHamburger() : null}>
+                        <Link class="navbar-item" to="#portfolio" onClick={isHamburgerActive ? toggleHamburger : null}>
                             Portfolio
                         </Link>
-                        <Link class="navbar-item" to="#resume" onClick={isHamburgerActive ? () => toggleHamburger() : null}>
+                        <Link class="navbar-item" to="#resume" onClick={isHamburgerActive ? toggleHamburger : null}>
                             Resume
                         </Link>
                         <div class="navbar-item">
