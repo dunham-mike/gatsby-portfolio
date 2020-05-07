@@ -8,5 +8,5 @@ technologies: "Technologies: React, Redux, Material-UI, Axios, Firebase,
   Jest/Enzyme, Cypress, Recharts, Formik, Yup, CircleCI"
 app-url: https://deliberate-sprints.web.app/
 github-url: https://github.com/dunham-mike/sprint-tracker
-order: 0
+order: 1
 ---
