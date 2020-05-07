@@ -1,7 +1,7 @@
 ---
 title: Caltrain Delay Watch
 screenshot: /images/uploads/caltrain-delay-watch.png
-preview: /images/uploads/caltrain-delay-watch.gif
+preview: /images/uploads/caltrain-delay-watch.png
 description: A full-stack web app (MERN stack) that allows users to monitor
   their daily commute and receive a text message whenever their usual Caltrain
   is running more than a few minutes late.
