@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactMarkdown from 'react-markdown';
 
 export const portfolioProject = (props) => {
     return(
@@ -24,7 +25,7 @@ export const portfolioProject = (props) => {
                 {props.projectInfo.description}
             </div>
             <div class="panel-block" style={{minHeight: '4rem'}}>
-                {props.projectInfo.technologies}
+                <ReactMarkdown source={props.projectInfo.technologies} />
             </div>
             <div class="panel-block" style={{padding: '0'}}>
                 <div class="columns is-centered is-hidden-touch is-hidden-desktop-only" style={{width: '100%', margin: 'auto'}}>

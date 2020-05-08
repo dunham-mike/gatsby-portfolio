@@ -13,7 +13,7 @@ export const skills = () => {
                     <div class="tile is-8 is-vertical">
                         <div class="tile is-parent">
                             <div class="tile is-child notification is-skills1 box">
-                                <p class="title">JavaScript, React, and Node</p>
+                                <p class="title">JavaScript, React, and Node.js</p>
                                 <p class="subtitle">Including Redux, Gatsby, MongoDB, and Express</p>
                             </div>
                         </div>
