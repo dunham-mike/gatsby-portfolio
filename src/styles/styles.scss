@@ -2,15 +2,75 @@
 @import "../../node_modules/bulma/sass/utilities/initial-variables";
 @import "../../node_modules/bulma/sass/utilities/functions";
 
-// Tool: https://coolors.co/00d1b2-ffffff-ff3860-174287-44af69
-// Greens: #004E64, #182825, #44AF69 (best of the light greens), #29BF12, #08605F (best of the dark greens)
-// Dark Purple: #413C58 (initial choice and still the best), #66101F (pretty red), #5D576B (pretty light), #4C191B (quite red), #483C46, #171738
-$dark-purple: #413C58;
-$dark-purple-invert: findColorInvert($dark-purple);
-$custom-colors: ("dark-purple": ($dark-purple, $dark-purple-invert));
-// $custom-colors: ("orange": ($orange, findColorInvert($orange)));
-// $custom-colors: ("purple": ($purple, findColorInvert($purple)));
 
+// Custom colors
+$light-turquoise: #02c39a;
+$light-turquoise-invert: findColorInvert($light-turquoise);
+$turquoise: #00A896;
+$turquoise-invert: findColorInvert($turquoise);
+$light-blue-green: #028090;
+$light-blue-green-invert: findColorInvert($light-blue-green);
+$blue-green: #05668D;
+$blue-green-invert: findColorInvert($blue-green);
+
+$blue: #1e91d6;
+$blue-invert: findColorInvert($blue);
+$orange: #ff9f1c;
+$orange-invert: findColorInvert($orange);
+$red: #ed1c24;
+$red-invert: findColorInvert($red);
+
+
+// Bulma Built-in Colors
+$primary: $red;
+$danger: $red;
+$info: $blue;
+$link: $blue;
+$success: $turquoise;
+
+@import "../../node_modules/bulma/sass/utilities/derived-variables"; // Must be after built-in colors
+
+
+// Skills
+$skills1: $turquoise;
+$skills2: $light-blue-green;
+$skills3: $blue-green;
+
+$skills1-invert: findColorInvert($skills1);
+$skills2-invert: findColorInvert($skills2);
+$skills3-invert: findColorInvert($skills3);
+
+$addSkillsColors: (
+    "skills1": ($skills1, $skills1-invert),
+    "skills2": ($skills2, $skills2-invert),
+    "skills3": ($skills3, $skills3-invert)
+);
+$colors: map-merge($colors, $addSkillsColors);
+
+
+// Portfolio Projects
+$portfolio1: $blue;
+$portfolio2: $turquoise;
+$portfolio3: $orange;
+$portfolio4: $red;
+
+$portfolio1-invert: findColorInvert($portfolio1);
+$portfolio2-invert: findColorInvert($portfolio2);
+$portfolio3-invert: findColorInvert($portfolio3);
+$portfolio4-invert: findColorInvert($portfolio4);
+
+$addPortfolioColors: (
+    "portfolio1": ($portfolio1, $portfolio1-invert),
+    "portfolio2": ($portfolio2, $portfolio2-invert),
+    "portfolio3": ($portfolio3, $portfolio3-invert),
+    "portfolio4": ($portfolio4, $portfolio4-invert),
+);
+$colors: map-merge($colors, $addPortfolioColors);
+
+
+// Other settings
 $footer-padding: 3rem 1.5rem;
 
+
+// Import rest of Bulma
 @import "~bulma/bulma.sass";

@@ -12,7 +12,7 @@ export const skills = () => {
                 <div class="tile is-ancestor">
                     <div class="tile is-8 is-vertical">
                         <div class="tile is-parent">
-                            <div class="tile is-child notification is-link box">
+                            <div class="tile is-child notification is-skills1 box">
                                 <p class="title">JavaScript and React</p>
                                 <p class="subtitle">Major libraries including: Redux, Gatsby, Axios, Material-UI, Bulma, Jest, Enzyme, Formik, Recharts</p>
                             </div>
@@ -20,22 +20,22 @@ export const skills = () => {
                         <div class="tile">
                             <div class="tile is-block-touch is-block-desktop-only">
                                 <div class="tile is-parent">
-                                    <div class="tile is-child notification is-info box has-text-centered" style={{paddingLeft: '0', paddingRight: '0', display: 'flex'}}>
+                                    <div class="tile is-child notification is-skills2 box has-text-centered" style={{paddingLeft: '0', paddingRight: '0', display: 'flex'}}>
                                         <div class="title is-centered" style={{margin: 'auto auto'}}>ES6</div>
                                     </div>
                                 </div>
                                 <div class="tile is-parent">
-                                    <div class="tile is-child notification is-info box has-text-centered" style={{paddingLeft: '0', paddingRight: '0', display: 'flex'}}>
+                                    <div class="tile is-child notification is-skills2 box has-text-centered" style={{paddingLeft: '0', paddingRight: '0', display: 'flex'}}>
                                         <p class="title is-centered" style={{margin: 'auto auto'}}>React 16+</p>
                                     </div>
                                 </div>
                                 <div class="tile is-parent">
-                                    <div class="tile is-child notification is-info box has-text-centered" style={{paddingLeft: '0', paddingRight: '0', display: 'flex'}}>
+                                    <div class="tile is-child notification is-skills2 box has-text-centered" style={{paddingLeft: '0', paddingRight: '0', display: 'flex'}}>
                                         <p class="title is-centered" style={{margin: 'auto auto'}}>HTML5</p>
                                     </div>
                                 </div>
                                 <div class="tile is-parent">
-                                    <div class="tile is-child notification is-info box has-text-centered" style={{paddingLeft: '0', paddingRight: '0', display: 'flex'}}>
+                                    <div class="tile is-child notification is-skills2 box has-text-centered" style={{paddingLeft: '0', paddingRight: '0', display: 'flex'}}>
                                         <p class="title is-centered" style={{margin: 'auto auto'}}>CSS3</p>
                                     </div>
                                 </div>
@@ -44,7 +44,7 @@ export const skills = () => {
                     
                     </div>
                     <div class="tile is-parent">
-                        <div class="tile is-child notification is-warning">
+                        <div class="tile is-child notification is-skills3">
                             <p class="title">Tooling</p>
                             <div class="content">
                                 Includes:

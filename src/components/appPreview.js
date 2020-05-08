@@ -14,8 +14,8 @@ export const appPreview = (props) => {
                 class="modal-card"
                 style={{minWidth: '80%', minHeight: '41.85%'}}
             >
-                <header class="modal-card-head">
-                    <p class="modal-card-title">
+                <header class="modal-card-head has-background-portfolio1">
+                    <p class="modal-card-title has-text-white">
                         {props.activeAppPreviewName}
                     </p>
                     <button class="delete" aria-label="close" onClick={props.closeAppPreview}></button>

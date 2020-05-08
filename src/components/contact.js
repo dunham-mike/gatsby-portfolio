@@ -11,7 +11,7 @@ export const contact = () => {
                     Contact Me
                 </h1>
                 <p>
-                    <span>Currently available for full-time or contract work, either remote or local to the Bay Area: </span>
+                    <span>Currently available for full-time or contract work, either remote or (post-pandemic) local to the Bay Area: </span>
                     <a href="mailto:mldunham@gmail.com">mldunham@gmail.com</a>
                 </p>
             </div>

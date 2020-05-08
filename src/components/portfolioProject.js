@@ -2,7 +2,7 @@ import React from 'react';
 
 export const portfolioProject = (props) => {
     return(
-        <article class="panel is-primary">
+        <article class="panel is-portfolio1">
             <p class="panel-heading">
                 {props.projectInfo.title}
             </p>
@@ -29,7 +29,7 @@ export const portfolioProject = (props) => {
             <div class="panel-block" style={{padding: '0'}}>
                 <div class="columns is-centered is-hidden-touch is-hidden-desktop-only" style={{width: '100%', margin: 'auto'}}>
                     <div class="column" style={{paddingRight: '0'}}>
-                        <div class="button is-danger is-outlined is-fullwidth has-text-weight-bold"
+                        <div class="button is-portfolio2 is-outlined is-fullwidth has-text-weight-bold"
                             role="button"
                             tabIndex={0}
                             onClick={props.openAppPreview}
@@ -40,21 +40,21 @@ export const portfolioProject = (props) => {
                     </div>
                     <div class="column">
                         <a href={props.projectInfo.app_url} target="_blank" rel="noopener noreferrer" 
-                            class="button is-link is-outlined is-fullwidth has-text-weight-bold"
+                            class="button is-portfolio3 is-outlined is-fullwidth has-text-weight-bold"
                         >
                             Live web app
                         </a>
                     </div>
                     <div class="column"  style={{paddingLeft: '0'}}>
                         <a href={props.projectInfo.github_url} target="_blank" rel="noopener noreferrer" 
-                            class="button is-dark-purple is-outlined is-fullwidth has-text-weight-bold"
+                            class="button is-portfolio4 is-outlined is-fullwidth has-text-weight-bold"
                         >
                             Source code on GitHub
                         </a>
                     </div>
                 </div>
                 <div class="is-hidden-widescreen" style={{width: '100%', padding: '0.75rem'}}>
-                    <div class="button is-danger is-outlined is-fullwidth has-text-weight-bold"
+                    <div class="button is-portfolio2 is-outlined is-fullwidth has-text-weight-bold"
                         style={{marginBottom: '0.75rem'}}
                         role="button"
                         tabIndex={0}
@@ -64,13 +64,13 @@ export const portfolioProject = (props) => {
                         App preview
                     </div>
                     <a href={props.projectInfo.app_url} target="_blank" rel="noopener noreferrer" 
-                        class="button is-link is-outlined is-fullwidth has-text-weight-bold"
+                        class="button is-portfolio3 is-outlined is-fullwidth has-text-weight-bold"
                         style={{marginBottom: '0.75rem'}}
                     >
                         Live web app
                     </a>
                     <a href={props.projectInfo.github_url} target="_blank" rel="noopener noreferrer" 
-                        class="button is-dark-purple is-outlined is-fullwidth has-text-weight-bold"
+                        class="button is-portfolio4 is-outlined is-fullwidth has-text-weight-bold"
                     >
                         Source code on GitHub
                     </a>

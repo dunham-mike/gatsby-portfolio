@@ -17,7 +17,7 @@ export const hero = () => {
                     <div style={{minHeight: "2.25rem" }} class="is-hidden-tablet"></div>
                     <div style={{minHeight: "1.5rem" }} class="is-hidden-mobile"></div>
                     <div class="is-size-5">
-                        I specialize in <span class="has-text-weight-bold has-text-danger">
+                        I specialize in <span class="has-text-weight-bold has-text-primary">
                             React</span> and <span class="has-text-weight-bold has-text-success">
                                 JavaScript</span> and am particularly interested in solving problems around 
                         <span style={{ whiteSpace: 'nowrap'}}>
