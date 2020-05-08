@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Mike Dunham | Frontend Engineer`,
-    description: `Portfolio for Mike Dunham, frontend engineer with a specialization in React.`,
+    title: `Mike Dunham | Software Engineer`,
+    description: `Portfolio for Mike Dunham, software engineer with a specialization in React and Node.js.`,
     author: `@mldunham`,
   },
   plugins: [

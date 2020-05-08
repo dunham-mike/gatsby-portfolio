@@ -13,8 +13,8 @@ export const skills = () => {
                     <div class="tile is-8 is-vertical">
                         <div class="tile is-parent">
                             <div class="tile is-child notification is-skills1 box">
-                                <p class="title">JavaScript and React</p>
-                                <p class="subtitle">Major libraries including: Redux, Gatsby, Axios, Material-UI, Bulma, Jest, Enzyme, Formik, Recharts</p>
+                                <p class="title">JavaScript, React, and Node</p>
+                                <p class="subtitle">Including Redux, Gatsby, MongoDB, and Express</p>
                             </div>
                         </div>
                         <div class="tile">
@@ -26,7 +26,12 @@ export const skills = () => {
                                 </div>
                                 <div class="tile is-parent">
                                     <div class="tile is-child notification is-skills2 box has-text-centered" style={{paddingLeft: '0', paddingRight: '0', display: 'flex'}}>
-                                        <p class="title is-centered" style={{margin: 'auto auto'}}>React 16+</p>
+                                        <p class="title is-centered" style={{margin: 'auto auto'}}>React<br/>16+</p>
+                                    </div>
+                                </div>
+                                <div class="tile is-parent">
+                                    <div class="tile is-child notification is-skills2 box has-text-centered" style={{paddingLeft: '0', paddingRight: '0', display: 'flex'}}>
+                                        <p class="title is-centered" style={{margin: 'auto auto'}}>Node.js 12+</p>
                                     </div>
                                 </div>
                                 <div class="tile is-parent">
@@ -59,13 +64,13 @@ export const skills = () => {
                                             <strong>Continuous Integration:</strong> CircleCI
                                         </li>
                                         <li>
-                                            <strong>Database/Backend:</strong> Firebase, Netlify
+                                            <strong>Database/Backend:</strong> MongoDB, Firebase, Heroku, Netlify
                                         </li>
                                         <li>
                                             <strong>UI:</strong> Material-UI, Bulma
                                         </li>
                                         <li>
-                                            <strong>JAMStack:</strong> Gatsby + Netlify
+                                            <strong>JAMStack:</strong> Gatsby + NetlifyCMS
                                         </li>
                                     </ul>
                             </div>

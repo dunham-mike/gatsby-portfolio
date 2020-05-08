@@ -30,6 +30,11 @@ $success: $turquoise;
 
 @import "../../node_modules/bulma/sass/utilities/derived-variables"; // Must be after built-in colors
 
+$addBasicColors: (
+    "orange": ($orange, $orange-invert)
+);
+$colors: map-merge($colors, $addBasicColors);
+
 
 // Skills
 $skills1: $turquoise;

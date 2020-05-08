@@ -4,7 +4,7 @@
   </a>
 </p>
 <h1 align="center">
-  Mike Dunham | Frontend Engineering Portfolio Site
+  Mike Dunham | Software Engineering Portfolio Site
 </h1>
 
 <h3 align="center" style="font-weight: bold">
