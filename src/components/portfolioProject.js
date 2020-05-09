@@ -8,18 +8,22 @@ export const portfolioProject = (props) => {
                 {props.projectInfo.title}
             </p>
             <div class="panel-block" style={{padding: '0.75rem 0.75rem'}}>
-                <img 
-                    src={props.projectInfo.screenshot} 
-                    alt="Project Screenshot"
-                    class="is-hidden-tablet" 
-                    style={{width: '100%', boxShadow: '0 0.3em 1em -0.125em rgba(10, 10, 10, 0.2)'}}
-                />
-                <img 
-                    src={props.projectInfo.screenshot} 
-                    alt="Project Screenshot"
-                    class="is-hidden-mobile" 
-                    style={{width: '100%', boxShadow: '0 0.3em 1em -0.125em rgba(10, 10, 10, 0.2)'}}
-                />
+                <a href={props.projectInfo.app_url} target="_blank" rel="noopener noreferrer">
+                    <img 
+                        src={props.projectInfo.screenshot} 
+                        alt="Project Screenshot"
+                        class="is-hidden-tablet" 
+                        style={{width: '100%', boxShadow: '0 0.3em 1em -0.125em rgba(10, 10, 10, 0.2)'}}
+                    />
+                </a>
+                <a href={props.projectInfo.app_url} target="_blank" rel="noopener noreferrer">
+                    <img 
+                        src={props.projectInfo.screenshot} 
+                        alt="Project Screenshot"
+                        class="is-hidden-mobile" 
+                        style={{width: '100%', boxShadow: '0 0.3em 1em -0.125em rgba(10, 10, 10, 0.2)'}}
+                    />
+                </a>
             </div>
             <div class="panel-block" style={{minHeight: '4rem'}}>
                 {props.projectInfo.description}
