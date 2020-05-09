@@ -72,7 +72,7 @@ export const resume = () => {
                         <div class="columns is-centered" style={{width: '100%', margin: '0'}}>
                             <div class="column is-4">
                                 <div class="is-size-4 has-text-weight-bold" style={{width: '100%'}}>
-                                    Technical<br/>Experience
+                                    Technical<br class="is-hidden-mobile" /> Experience
                                 </div>
                             </div>
                             <div class="column is-7">
