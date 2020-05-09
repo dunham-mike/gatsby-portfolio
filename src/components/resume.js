@@ -26,12 +26,41 @@ export const resume = () => {
                                 <div style={{width: '100%'}}>
                                     <p class="is-size-6">
                                         <span class="has-text-weight-bold">Stanford Graduate School of Education</span><br />
-                                        MA, Learning, Design, & Technology <span style={{color: 'hsl(0, 0%, 60%)'}}>(2015)</span>
+                                        MA, Learning, Design, & Technology <span style={{color: 'hsl(0, 0%, 60%)'}}>(2015)</span><br />
+                                        <span class="content is-size-7">
+                                            Relevant coursework:
+                                            <ul style={{ marginTop: '0px' }}>
+                                                <li>CS 106B - Programming Abstractions</li>
+                                                <li>CS 193P - iPhone and iPad Application Programming</li>
+                                                <li>CS 298 - Seminar on Teaching Introductory Computer Science</li>
+                                            </ul> 
+                                        </span>
                                     </p>
                                     <div style={{height: '0.75rem'}}></div>
                                     <p class="is-size-6">
                                         <span class="has-text-weight-bold">Yale University</span><br />
                                         BA, Political Science <span style={{color: 'hsl(0, 0%, 60%)'}}>(2006)</span>
+                                    </p>
+                                    <div style={{height: '0.75rem'}}></div>
+                                    <p class="is-size-6">
+                                        <span class="has-text-weight-bold">Online Coursework</span><span style={{color: 'hsl(0, 0%, 60%)'}}> (2020)</span><br />
+                                        <span class="content is-size-7">
+                                            <div style={{ marginTop: '4px' }}>
+                                                Udemy:
+                                                <ul style={{ marginTop: '0px' }}>
+                                                    <li>The Complete 2020 Web Development Bootcamp</li>
+                                                    <li>JavaScript - Understanding the Weird Parts</li>
+                                                    <li>React - The Complete Guide</li>
+                                                </ul> 
+                                            </div>
+                                            <div style={{ marginTop: '4px' }}>
+                                                Pluralsight:
+                                                <ul style={{ marginTop: '0px' }}>
+                                                    <li>Node.js: Getting Started</li>
+                                                    <li>Building Web Applications with Node.js and Express 4.0</li>
+                                                </ul> 
+                                            </div>
+                                        </span>
                                     </p>
                                 </div>
                             </div>
@@ -41,36 +70,21 @@ export const resume = () => {
                         <div class="columns is-centered" style={{width: '100%', margin: '0'}}>
                             <div class="column is-4">
                                 <div class="is-size-4 has-text-weight-bold" style={{width: '100%'}}>
-                                    Experience
+                                    Technical<br/>Experience
                                 </div>
                             </div>
                             <div class="column is-7">
-                                <div style={{width: '100%'}}>
-                                    <p class="is-size-6">
-                                        <span class="has-text-weight-bold">Mike Dunham for Burlingame City Council</span><br />
-                                        <a href="https://www.MikeForBurlingame.com" target="_blank" rel="noopener noreferrer">www.MikeForBurlingame.com</a><br />
-                                        <span style={{color: 'hsl(0, 0%, 60%)'}}>7/2019 - 11/2019</span>
-                                        <br />
-                                        <div class="content">
-                                            <ul>
-                                                <li style={{marginLeft: '-15px'}}>Ran grassroots city council campaign challenging two incumbents over housing, transportation, and equity issues.</li>
-                                                <li style={{marginLeft: '-15px'}}>Raised $25,000, knocked more than 14,000 doors with 45+ volunteers, and helped drive turnout to its highest level in 15 years.</li>
-                                            </ul>
-                                        </div>
-                                    </p>
-                                </div>
-
-                                <div style={{height: '0.75rem'}}></div>
-
                                 <div style={{width: '100%'}}>
                                     <p class="is-size-6">
                                         <span class="has-text-weight-bold">Summit Public Schools - Director of Data / Consultant</span><br />
                                         <a href="https://www.SummitPS.org" target="_blank" rel="noopener noreferrer">www.SummitPS.org</a><br />
                                         <span style={{color: 'hsl(0, 0%, 60%)'}}>8/2015 - 6/2019</span>
                                         <br />
-                                        <div class="content">
+                                        <div class="content" style={{ marginTop: '-5px' }}>
                                             <ul>
                                                 <li style={{marginLeft: '-15px'}}>Managed team of 6 to setup and operate numerous student data systems and provide data, reporting, scheduling, and operational support to 11 schools in CA and WA.</li>
+                                                <li style={{marginLeft: '-15px'}}>Led the network's first implementation of algorithmic student scheduling.
+                                                Replaced a manual spreadsheet-based process and delivered 100% of schedules on time and with near-perfect accuracy.</li>
                                             </ul>
                                         </div>
                                         
@@ -85,7 +99,7 @@ export const resume = () => {
                                         <a href="https://www.NewClassrooms.org" target="_blank" rel="noopener noreferrer">www.NewClassrooms.org</a><br />
                                         <span style={{color: 'hsl(0, 0%, 60%)'}}>7/2012 - 8/2014</span>
                                         <br />
-                                        <div class="content">
+                                        <div class="content" style={{ marginTop: '-5px' }}>
                                             <ul>
                                                 <li style={{marginLeft: '-15px'}}>Developed and maintained large suite of SQL-based data integrity tests for one of the country's earliest personalized learning programs.</li>
                                                 <li style={{marginLeft: '-15px'}}>Led cross-functional team (academics, operations, engineering) to build next-generation of tools for dynamically moving 6,000 students through the program's curriculum.</li>
@@ -103,9 +117,10 @@ export const resume = () => {
                                         <a href="https://www.TeachForAmerica.org" target="_blank" rel="noopener noreferrer">www.TeachForAmerica.org</a><br />
                                         <span style={{color: 'hsl(0, 0%, 60%)'}}>6/2010 - 6/2012</span>
                                         <br />
-                                        <div class="content">
+                                        <div class="content" style={{ marginTop: '-5px' }}>
                                             <ul>
                                                 <li style={{marginLeft: '-15px'}}>Selected into a highly-competitive public service program and taught for 2 years in an under-served Brooklyn neighborhood.</li>
+                                                <li style={{marginLeft: '-15px'}}>Created school's first-ever Computer Club, teaching dozens of students HTML and CSS after school.</li>
                                             </ul>
                                         </div>
                                     </p>
