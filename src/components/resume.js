@@ -36,12 +36,12 @@ export const resume = () => {
                                             </ul> 
                                         </span>
                                     </p>
-                                    <div style={{height: '0.75rem'}}></div>
+                                    <div style={{height: '1.125rem'}}></div>
                                     <p class="is-size-6">
                                         <span class="has-text-weight-bold">Yale University</span><br />
                                         BA, Political Science <span style={{color: 'hsl(0, 0%, 60%)'}}>(2006)</span>
                                     </p>
-                                    <div style={{height: '0.75rem'}}></div>
+                                    <div style={{height: '1.125rem'}}></div>
                                     <p class="is-size-6">
                                         <span class="has-text-weight-bold">Online Coursework</span><span style={{color: 'hsl(0, 0%, 60%)'}}> (2020)</span><br />
                                         <span class="content is-size-7">
@@ -91,7 +91,7 @@ export const resume = () => {
                                     </p>
                                 </div>
 
-                                <div style={{height: '0.75rem'}}></div>
+                                <div style={{height: '1.125rem'}}></div>
 
                                 <div style={{width: '100%'}}>
                                     <p class="is-size-6">
@@ -102,14 +102,14 @@ export const resume = () => {
                                         <div class="content" style={{ marginTop: '-5px' }}>
                                             <ul>
                                                 <li style={{marginLeft: '-15px'}}>Developed and maintained large suite of SQL-based data integrity tests for one of the country's earliest personalized learning programs.</li>
-                                                <li style={{marginLeft: '-15px'}}>Led cross-functional team (academics, operations, engineering) to build next-generation of tools for dynamically moving 6,000 students through the program's curriculum.</li>
+                                                <li style={{marginLeft: '-15px'}}>Led cross-functional team (academics, operations, engineering) to build next-generation of software tools for dynamically moving 6,000 students through the program's curriculum.</li>
                                             </ul>
                                         </div>
                                         
                                     </p>
                                 </div>
 
-                                <div style={{height: '0.75rem'}}></div>
+                                <div style={{height: '1.125rem'}}></div>
 
                                 <div style={{width: '100%'}}>
                                     <p class="is-size-6">
