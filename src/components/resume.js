@@ -43,8 +43,10 @@ export const resume = () => {
                                     </p>
                                     <div style={{height: '1.125rem'}}></div>
                                     <p class="is-size-6">
-                                        <span class="has-text-weight-bold">Online Coursework</span><span style={{color: 'hsl(0, 0%, 60%)'}}> (2020)</span><br />
-                                        <span class="content is-size-7">
+                                        <div>
+                                            <span class="has-text-weight-bold">Online Coursework</span><span style={{color: 'hsl(0, 0%, 60%)'}}> (2020)</span><br />
+                                        </div>
+                                        <div class="content is-size-7">
                                             <div style={{ marginTop: '4px' }}>
                                                 Udemy:
                                                 <ul style={{ marginTop: '0px' }}>
@@ -60,7 +62,7 @@ export const resume = () => {
                                                     <li>Building Web Applications with Node.js and Express 4.0</li>
                                                 </ul> 
                                             </div>
-                                        </span>
+                                        </div>
                                     </p>
                                 </div>
                             </div>
